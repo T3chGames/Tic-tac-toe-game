@@ -1,0 +1,61 @@
+:root {
+  --cell-size: 100px;
+  --mark-size: calc(var(--cell-size) * .9);
+}
+
+body {
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+.knopje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 71, 178);
+  border-radius: 10px;
+  width: 10vh;
+  height: 10vw;
+}
+
+.board {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto)
+}
+
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  background-color: yellowgreen;
+}
+
+.cell.a {
+  background-image: url(image/o.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.cell.b {
+  background-image: url(image/x.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
